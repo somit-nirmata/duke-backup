@@ -1,6 +1,6 @@
 cd /apps/nirmata/backup/prod
 
-file=$(ls -Art | tail -n 1)
+file=$(ls -rt | tail -n 1)
 
 f_dt="$(echo "$file"|grep -Eo "[0-9]{4}\-[0-9]{2}\-[0-9]{2}")"
 
