@@ -11,7 +11,7 @@ export  NADM_HOME=/home/diamanti
 /home/diamanti/nirmata/nadm-3.5.4/nadm backup -d $BACKUPDIR -n nirmata --all
 
 cd $BACKUPDIR
-file=$(ls -Art | tail -n 1)
+file=$(ls -rt | tail -n 1)
 f_dt="$(echo "$file"|grep -Eo "[0-9]{4}\-[0-9]{2}\-[0-9]{2}")"
 echo $f_dt
 
